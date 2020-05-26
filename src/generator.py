@@ -18,23 +18,23 @@ def parse_sentence(sentence):
       items = list(vocabulary["verbs"][type])
 
       if parts[2] == "root":
-        sentence = re.sub("(\[" + token + "\])", random.choice(items)[0], sentence)
+        sentence = re.sub("(\[" + token + "\])", random.choice(items)[0], sentence,1)
         continue
       elif parts[2] == "past":
-        sentence = re.sub("(\[" + token + "\])", random.choice(items)[1], sentence)
+        sentence = re.sub("(\[" + token + "\])", random.choice(items)[1], sentence,1)
         continue
       elif parts[2] == "present":
-        sentence = re.sub("(\[" + token + "\])", random.choice(items)[2], sentence)
+        sentence = re.sub("(\[" + token + "\])", random.choice(items)[2], sentence,1)
         continue
 
     if parts[0] == "noun":
       items = list(vocabulary["nouns"][type])
 
-      sentence = re.sub("(\[" + token + "\])", random.choice(items), sentence)
+      sentence = re.sub("(\[" + token + "\])", random.choice(items), sentence,1)
       continue
     elif parts[0] == "simile":
       items = list(vocabulary["similes"][type])
-      sentence = re.sub("(\[" + token + "\])", random.choice(items), sentence)
+      sentence = re.sub("(\[" + token + "\])", random.choice(items), sentence, 1)
       continue
 
   return sentence
@@ -49,9 +49,6 @@ def generate(num):
 
 
 print (generate(5))
-
-#def parse_sentence():
-
 
 
 
