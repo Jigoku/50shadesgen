@@ -1,4 +1,4 @@
-var vocab = {
+{
     "verbs" : {
         "sex" : [
             ["fuck", "fucked", "fucking"],
@@ -496,4 +496,5 @@ var vocab = {
             "an otter's pocket"
         ]
     }
-};
+}
+
