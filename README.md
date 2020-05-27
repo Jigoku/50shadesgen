@@ -3,5 +3,7 @@ The Fifty Shades Generator is a breakthrough in erotic fiction, it generates wor
 
 See `main.py` for an example of use.
 
+This may be useful for others as a "fun" command for a discord/irc bot (i am personally using this for those).
+
 ## Requirements
 * python3
